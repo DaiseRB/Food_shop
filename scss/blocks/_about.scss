@@ -1,0 +1,55 @@
+.about {
+    background-color: $light_grey;
+    .about__wrapper {
+        padding: 100px 0;
+    }
+
+    .about__content {
+        @include flex-row;
+    }
+
+    .about__text {
+        max-width: 520px;
+        margin: 30px 0 0 0;
+    }
+
+    .about__icons-wrapper {
+        width: 630px;
+        margin: 0 0 0 140px;
+    }
+
+    .about__icons-list {
+        @include flex-row;
+        justify-content: space-between;
+        
+    }
+    
+    .about__icons-item {
+        min-width: 190px;
+        min-height: 150px;
+        background-color: $white;
+        box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+        border-radius: 6px; 
+        @include flex-row;
+        justify-content: center;
+    }
+
+    .about__item-content {
+        align-self: flex-end;
+        @include flex-col;
+        align-items: center;
+        margin: 0 0 46px 0;
+        
+    }
+
+    .about__item-content--dblstring {
+        margin: 0 0 20px 0;
+    }
+
+    .about__icons-text { 
+        @include font (700, 15px, 25px);
+        color: $black;
+        text-align: center;
+        margin: 15px 0 0 0;
+    }
+}

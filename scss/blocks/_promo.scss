@@ -1,0 +1,42 @@
+.promo {
+    background-color: $white;
+    padding: 100px 0;
+    
+    .promo__content-wrapper {
+    @include flex-row;
+    justify-content: space-between;
+    }
+
+    .promo__info-block {
+    @include flex-col;
+    }
+
+    .promo__sub-heading {
+        margin: 74px 0 0 0; 
+    }
+
+    .promo__text-content {
+        margin: 30px 0 0 0;
+        max-width: 490px;
+    }
+
+    .promo__price-wrapper {
+        @include flex-row;
+        margin: 30px 0 0 0;
+    }
+
+    .promo__actual-price {
+        @include font (700, 48px, 72px);
+        color: $green;
+        align-self: center;
+    }
+
+    .promo__previous-price {
+        @include font (400, 24px, 36px);
+        color: $purple;
+        text-decoration: line-through;
+        align-self: flex-end;
+        margin: 0 0 10px 20px;
+    }
+
+}

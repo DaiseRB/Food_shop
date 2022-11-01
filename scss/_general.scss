@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Golos_Text_Web';
+    src: url(../css/fonts/golos_text_web/Golos-Text_Regular.woff);
+    src: url(../css/fonts/golos_text_web/Golos-Text_Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'Golos_Text_Web';
+    src: url(../css/fonts/golos_text_web/Golos-Text_Bold.woff);
+    src: url(../css/fonts/golos_text_web/Golos-Text_Bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+    
+html,
+body {
+    font-family: 'Golos_Text_Web';
+    height: 100%;
+    max-width: 100%; 
+}
+    
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+    
+.wrapper {
+    min-height: 100%;
+    @include flex-col;
+}
+
+main {
+        flex: 1 1 auto;
+}
+    
+.logo {
+    @include size (190px, 84px); 
+    border: 2px solid $green;
+    border-radius: 6px;
+    padding: 34px 0 15px 15px;
+}
+
+.icon {
+    align-self: center;
+}
+
+.heading-l {
+    @include font (700, 36px, 50px);
+    color: $black;
+}
+
+.heading-m {
+    @include font (700, 26px, 35px);
+    color: $black;
+}
+
+.heading-s {
+    @include font (700, 18px, 25px);
+    color: $black;
+    letter-spacing: 0.5px;
+}
+
+.heading-container {
+    @include flex-row;
+    justify-content: space-between;
+}
+
+.link-wrapper {
+    align-self: center;
+}
+
+.page-link {
+    @include font (400, 15px, 25px);
+    color: $purple;
+    border-bottom: 1px solid $green;
+}
+
+.text-s {
+    @include font (400, 15px, 25px);
+    color: $black; 
+}
+
+.buy-button {
+    @include size (190px, 60px);
+    background-color: $purple;
+    box-shadow: 0px 20px 50px -8px rgba(65, 14, 106, 0.35);
+    border-radius: 6px;
+    color: $white;
+    @include font (400, 18px, 30px);
+}
+
+.actual-price {
+    @include font (700, 48px, 72px);
+    color: $green;
+    align-self: center;
+}
+
+.details {
+    @include size (190px, 60px);
+    background-color: $white;
+    border: 1px solid $purple;
+    border-radius: 6px;
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+}
+
+.details__link {
+    color: $black;
+    @include font (400, 18px, 30px);
+}
+
+.buttons-wrapper {
+    @include flex-row;
+    justify-content: space-between;
+    width: 410px;
+    margin: 30px 0 0 0; 
+}
+

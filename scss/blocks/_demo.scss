@@ -1,0 +1,86 @@
+.demo {
+    background-color: $white;
+    position: relative;
+    max-width: 100%;
+
+
+.demo__shadow-wrapper {
+    
+}
+
+.demo-wrapper {
+    padding: 0 0 100px 0;
+    max-width: 1990px;
+}
+
+.demo__list {
+    @include flex-row;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+    z-index: 2;
+}
+
+.demo__item {
+    @include size (190px, 140px);
+    background-color: $white;
+    box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+    border-radius: 6px;
+    @include flex-row;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.demo__img {
+    
+}
+.product-img { }
+.demo__card-wrapper {
+    width: 1290px;
+    margin: 0 auto;
+    padding: 94px 0 0 0; 
+    @include flex-row;
+    justify-content: flex-start;
+}
+.demo__text-box { }
+.actual-price { }
+.demo__details {
+    color: $dark_grey;
+    @include font (400px, 18px, 30px);
+    margin: 10px 0 0 10px;
+}
+.demo__text-s {
+    width: 440px;
+    margin: 0 0 10px 0;
+}
+
+.demo__img-box { 
+    flex: 1 auto;
+}
+
+.demo__img-wrapper { 
+    background-color: $white;
+    @include size (280px, 280px);
+    @include flex-row;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 20px 50px -8px rgba(69, 78, 96, 0.15);
+    margin: 140px 0 0 402px;
+    position: relative;
+    top: 952px;
+    left: 50px;
+    z-index: 2;
+}
+
+.demo__shadow-box {
+    @include size (1177px, 1177px);
+    background-color: $light_grey;
+    border-radius: 50%;
+    position: absolute;
+    left: 708px;
+    top: -515px;
+}
+
+.large-img {
+    align-self: center;
+}
+}
